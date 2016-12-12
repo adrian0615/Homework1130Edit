@@ -4,15 +4,15 @@
 func strtupzr (word: String) -> String {
     let vowels: ([Character]) = ["a", "e", "i", "o", "u"]
     var newString = ""
-    var OddEven = 0
+    var oddEven = 0
     
     for character in word.characters {
         var vowel = false
         
         if vowels.contains(character) {
-            OddEven = OddEven + 1
+            oddEven = oddEven + 1
             vowel = true }
-        if OddEven % 2 == 0 {
+        if oddEven % 2 == 0 {
             newString.append(character)
             vowel = true }
         if !vowel {
@@ -26,5 +26,7 @@ func strtupzr (word: String) -> String {
 
 strtupzr(word: "startupzer")
 
+
+strtupzr(word: "cupcake")
 
 
